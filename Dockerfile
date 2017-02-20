@@ -1,6 +1,6 @@
 FROM node:alpine
 
-MAINTAINER bigbassroller bigbassroller@gmail.co
+MAINTAINER bigbassroller bigbassroller@gmail.com
 
 # Install bash
 RUN apk add --update bash && rm -rf /var/cache/apk/*
@@ -17,4 +17,4 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "dev" ]
