@@ -1,0 +1,10 @@
+version: '2'
+services:
+  vue-frontend-container:
+    container_name: vue-frontend-container
+    image: bigbassroller/vue-frontend-container
+    build: .
+    ports:
+     - "8080:8080"
+    volumes:
+     - .:/usr/src/app
